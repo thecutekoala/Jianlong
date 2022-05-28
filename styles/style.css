@@ -1,10 +1,26 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
+  background-color: #eee2c8;
+  scroll-behavior: smooth;
+  font-family: "標楷體", "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+html,
+body,
+.wrap {
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
-  width: 2rem;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -18,7 +34,94 @@
   background: #dcc99e;
 }
 
-.header {
+i {
+  pointer-events: none;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .sideMenu {
+  width: 30%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.607);
+  z-index: 999;
+  position: fixed;
+  float: inline-end;
+}
+
+header {
+  height: 60px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header h2 {
+  width: 80%;
+}
+
+header .nav {
+  margin: 9px 2%;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav .navbar {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #563e08;
+  cursor: pointer;
+}
+
+header .nav :hover {
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section {
+  height: 100%;
+  padding: 0 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section div {
+  margin-top: 5px;
+}
+
+section .banner {
   margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,38 +132,104 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5%;
 }
 
-.header img {
+section .banner h1 {
   width: 100%;
 }
 
-.banner1,
-.banner2 {
+section .banner h1 img {
+  width: 100%;
+}
+
+section .intro p {
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+section .preview .swiper {
+  width: 100%;
+  height: 70%;
+}
+
+section .preview img {
+  width: 100%;
+}
+
+section .author {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .author .author-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.banner1 p,
-.banner2 p {
-  width: 141%;
+section .author .author-title .author-pic {
+  width: 150px;
 }
 
-.banner1 p img,
-.banner2 p img {
+section .author .author-title .author-pic img {
   width: 100%;
 }
 
-.banner1 {
-  margin-bottom: 5px;
+section .author .author-title .author-cv {
+  padding-left: 5%;
+  line-height: 36px;
+}
+
+section .author .author-exh {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section .author .author-exh .author-exh-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+section .author .author-exh .author-exh-list .bar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10px;
+          flex: 0 0 10px;
+  height: 100%;
+  border-left: 3px solid red;
+}
+
+footer {
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.203);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=style.css.map */

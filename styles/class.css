@@ -1,0 +1,38 @@
+/* 背景顏色 */
+.bg-wo-0 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.bg-wo-3 {
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+/* 字體大小 */
+.fz-40 {
+  font-size: 40px;
+}
+
+.fz-36 {
+  font-size: 36px;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+/* 字體顏色 */
+.c-br01 {
+  color: rgb(152, 85, 3);
+}
+
+.c-r {
+  color: red;
+}
